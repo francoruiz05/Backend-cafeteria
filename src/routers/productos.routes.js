@@ -8,6 +8,6 @@ import productCtrl from "../controllers/productos.controllers";
 
 
  // crear la ruta
-router.route('/products').get(productCtrl.listarProductos);
+router.route('/products').get(productCtrl.listarProductos).post(productCtrl.crearProducto)
 
 export default router;
