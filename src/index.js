@@ -4,6 +4,7 @@ import morgan from "morgan";
 import cors from "cors";
 import path from "path";
 import router from "./routers/productos.routes";
+import './database'
 
 // creo una instancia de express
 const app = express();
