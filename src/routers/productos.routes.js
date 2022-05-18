@@ -2,12 +2,13 @@
 import { Router } from "express";
 import productCtrl from "../controllers/productos.controllers";
 
-
 // instancio al router
- const router = Router()
+const router = Router();
 
-
- // crear la ruta
-router.route('/products').get(productCtrl.listarProductos).post(productCtrl.crearProducto)
+// crear la ruta
+router
+  .route("/products")
+  .get(productCtrl.listarProductos)
+  .post(productCtrl.crearProducto);
 
 export default router;
