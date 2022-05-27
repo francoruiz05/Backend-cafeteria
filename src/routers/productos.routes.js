@@ -11,4 +11,5 @@ router
   .get(productCtrl.listarProductos)
   .post(productCtrl.crearProducto);
 
+  router.route ("/products/:id").get(productCtrl.obtenerProducto)
 export default router;
